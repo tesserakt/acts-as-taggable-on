@@ -27,19 +27,17 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'rspec-rails', '2.13.0' # 2.13.1 is broken
   gem.add_development_dependency 'rspec', '~> 2.6'
   gem.add_development_dependency 'ammeter'
+  gem.add_development_dependency 'guard'
+  gem.add_development_dependency 'guard-rspec'
   
   case RUBY_PLATFORM
   when 'java'
-    s.add_development_dependency 'activerecord-jdbcsqlite3-adapter'
-    s.add_development_dependency 'activerecord-jdbcmysql-adapter'
-    s.add_development_dependency 'activerecord-jdbcpostgresql-adapter'
-    s.add_development_dependency 'therubyrhino'
+    gem.add_development_dependency 'activerecord-jdbcsqlite3-adapter'
+    gem.add_development_dependency 'activerecord-jdbcmysql-adapter'
+    gem.add_development_dependency 'activerecord-jdbcpostgresql-adapter'
   else
     gem.add_development_dependency 'sqlite3'
     gem.add_development_dependency 'mysql2', '~> 0.3.7'
     gem.add_development_dependency 'pg'
   end
-
-  gem.add_development_dependency 'guard'
-  gem.add_development_dependency 'guard-rspec'
 end
