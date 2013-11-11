@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["michael@intridea.com", "joost@spacebabies.nl"]
   gem.description   = %q{With ActsAsTaggableOn, you can tag a single model on several contexts, such as skills, interests, and awards. It also provides other advanced functionality.}
   gem.summary       = "Advanced tagging for Rails."
-  gem.homepage      = 'https://github.com/mbleigh/acts-as-taggable-on'
+  gem.homepage      = 'https://github.com/tesserakt/acts-as-taggable-on'
   gem.license       = "MIT"
 
   gem.files         = `git ls-files`.split($/)
